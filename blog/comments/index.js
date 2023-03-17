@@ -18,6 +18,8 @@ app.post('/posts/:id/comments', (req, res) => {
     
     // check to see if other comments are available for the postId
     const comments = commentsByPostId[req.params.id] || [];
+
+    comments.push()
 });
 
 app.listen(4001, () => {
